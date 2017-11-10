@@ -21,6 +21,13 @@ class ConverterViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBOutlet weak var outputDisplay: UITextField!
+    @IBOutlet weak var inputdisplay: UITextField!
+    
+    @IBAction func convertButton(_ sender: Any) {
+        
+    }
+    
     // Convert from F to C (Integer)
     func fahrenheitToCelsius(tempInF:Int) ->Int {
         let celsius = (tempInF - 32) * (5/9)
